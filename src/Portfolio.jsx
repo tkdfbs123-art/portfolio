@@ -19,7 +19,7 @@ const Portfolio = () => {
     title: 'Backend Developer',
     email: 'your.email@example.com', // 실제 이메일로 변경하세요
     github: 'https://github.com/yourusername', // 실제 GitHub로 변경하세요
-    intro: 'Python과 Django 기반의 백엔드 개발에 강점이 있으며, 머신러닝과 데이터 파이프라인 구축 경험을 보유하고 있습니다. 문제 해결 능력과 새로운 기술 학습에 대한 열정으로 성장하는 개발자입니다.'
+    intro: 'Python과 mysql 기반의 백엔드 개발에 강점이 있으며, 머신러닝과 데이터 파이프라인 구축 경험을 보유하고 있습니다. 문제 해결 능력과 새로운 기술 학습에 대한 열정으로 성장하는 개발자입니다.'
   };
 
   // 학력
