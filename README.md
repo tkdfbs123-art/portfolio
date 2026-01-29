@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 이정민 - 개발자 포트폴리오
 
 React로 제작한 개인 포트폴리오 웹사이트입니다.
@@ -186,3 +187,6 @@ GitHub: https://github.com/yourusername
 ---
 
 **Made with ❤️ using React**
+=======
+# portfolio
+>>>>>>> 03347fc3372ec559a4b46bbc5c1dda59418ae93d
