@@ -156,7 +156,7 @@ const Portfolio = () => {
         }
       ],
       github: 'https://github.com/tkdfbs123-art/Second_Project',
-      video: '/kiwi.mp4'
+      video: "/kiwi.mp4"
     },
     {
       name: '희노애애락도 ROCK이다 🤘',
