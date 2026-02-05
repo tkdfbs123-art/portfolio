@@ -156,7 +156,7 @@ const Portfolio = () => {
         }
       ],
       github: 'https://github.com/tkdfbs123-art/Second_Project',
-      video: "/kiwi.mp4"
+      video: process.env.PUBLIC_URL + '/kiwi.mp4'
     },
     {
       name: '희노애애락도 ROCK이다 🤘',
@@ -185,7 +185,7 @@ const Portfolio = () => {
         }
       ],
       github: 'https://github.com/tkdfbs123-art/-first_Progect',
-      video: '/feelconomy.mp4'
+      video: process.env.PUBLIC_URL + '/feelconomy.mp4'
     }
   ];
 
@@ -1484,14 +1484,23 @@ const Portfolio = () => {
             <button className="video-modal-close" onClick={closeVideoModal}>
               ×
             </button>
-            <video
-              src={videoModal.url}
-              controls
-              autoPlay
-              style={{ width: '100%', maxHeight: '70vh', backgroundColor: '#000' }}
-            >
-              Your browser does not support the video tag.
-            </video>
+            {videoModal.url.includes('youtube.com') || videoModal.url.includes('youtu.be') ? (
+              <iframe
+                src={videoModal.url.replace('watch?v=', 'embed/').replace('youtu.be/', 'youtube.com/embed/')}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ width: '100%', height: '70vh', border: 'none' }}
+              ></iframe>
+            ) : (
+              <video
+                src={videoModal.url}
+                controls
+                autoPlay
+                style={{ width: '100%', maxHeight: '70vh', backgroundColor: '#000' }}
+              >
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
         </div>
       )}
